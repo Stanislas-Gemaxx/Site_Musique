@@ -1,6 +1,6 @@
 PLAN/IDEES :
 
-    Accueille
+    Accueil
         credits plus detailler explique le but du site et le proger en cours et ceux que l'on peut retrouver sur se site
         plus les dedicasse spétiale du style mama qui m'a mis a la guitare avec samir    
            
@@ -28,6 +28,8 @@ CREDITS :
         https://duckduckgo.com/?t=ffab&q=r%C3%A9cup%C3%A9rer+variables+css+en+javascript&ia=web
 
         https://openclassrooms.com/forum/sujet/recuperation-de-variable-css-en-javascript
+
+        lien du site : https://site-musique-virid.vercel.app/
 
 
 UTILE :
