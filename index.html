@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Acceuille</title>
+    <link rel ="stylesheet" href ="style.css">
+    <link rel="icon" href="images/logo.svg">
+</head>
+
+
+
+<body>
+<div id="Page">
+
+<!-- Navbar avec les liens et le logo -->
+<div class="entete" id="navbar">
+    <img id="logo" src="images/logo.svg">
+        <nav class="texte_onglet">
+            <a href="index.html">Accueille</a>
+            <a href="theorie_musicale.html">Theorie musicale</a>
+            <a href="Exercies.html">Exercices</a>
+            <a href="Stanislas.html">Stanislas et la musique</a>
+        </nav>
+</div>
+
+<!-- Exo bpm/generateur accord -->
+<div class="carre" id="accord_generateur">
+
+    <h1 id="titre_generateur">Generateur accord</h1>
+
+    <div id="text_accord">Gm7</div>
+    <br>
+
+    <form id="form">
+        <div class="h2">
+    <label for="bpm" >Bpm :</label>
+    <input type="string" id="bpm" name="nombre" class="input">
+
+        <br><br>
+    <label for="game">Game :</label>
+    <input type="string" id="game" name="lettre" class="input">
+    </form>
+        </div>
+
+    <div class="carre_light" id="carre_button_start" onclick ="start()">
+        <label class="h2" id="start_button" >Start</label> 
+    </div> 
+
+</div>
+
+
+<!-- Footer pour les crédits -->
+<footer class="entete" id="footer">
+    <!-- droite -->
+    <div class="carre_light" id="carre_dans_footer">
+        <div id="logo_IND"> </div>
+        <div id="texte_credits_et_sous_1">
+        <h3 class="texte_credits">Samir</h3>
+        <h4 class="sous_texte_credits">Musiscien professionel et enseignant</h4>
+        </div>
+    </div>
+
+
+    <!-- milieu -->
+    <h2 id="titre_footer_realisateur">
+        Réalisé par :
+    </h2>
+
+    <h3>
+    <ul>
+            <li class="texte_realisateur">Stanislas</li>
+    </ul>
+    </h3>
+
+    <!-- gauche -->
+    <h2 id="titre_footer_source">
+        Sources :
+    </h2>
+
+    
+    <ul  id="texte_source">
+        <h3>
+        <li><a href="https://developer.mozilla.org/fr/docs/Web">Mozilla</a></li>
+        <li><a href="https://www.gekkode.com/developpement/comment-obtenir-les-valeurs-css-en-javascript/">Gekkode</a></li>
+        <li><a href="https://www.reddit.com/">Reddit</a></li>
+        <li><a href="https://www.youtube.com/@whosajid">Sajid</a></li>
+        <li><a href="https://www.vistaprint.fr">Vistaprint</a></li>
+        </h3>
+    </ul>
+
+    <!-- ligne -->
+    <div class="ligne" id="ligne_droite"></div>
+    <div class="ligne" id="ligne_gauche"></div>
+</footer>
+
+<script src=script.js type="text/javascript"> </script>
+</body>
+</div>
+</html>

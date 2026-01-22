@@ -1,0 +1,290 @@
+/* déf de variable */
+:root{
+  /* couleurs */
+  --bg: hsl(200, 60%, 5%);
+  --bg_light:hsl(200, 60%, 10%);
+  --bg_hover:hsl(200, 60%, 7%);
+  --bg_light_hover:hsl(200, 60%, 12%);
+  --ligne: hsl(0,0%,95%);
+
+  /* textes */
+  --h1:hsl(0, 0%, 100%);
+  --h2: hsl(0,0%,95%);
+  --h3:hsl(0,0%,70%);
+
+  /* attributs des formes */
+  --border_bank: solid 1px hsl(0,0%,30%);
+  --box_shadow_bank:-2px 7px 7px 3px hsl(236, 55%, 6%);
+}
+/* classe par défaut */
+body {
+  background-image:url(images/bg.avif);
+  background-size:100% 100%;
+  margin: 0;
+  padding: 0;
+}
+/* textes */
+a {
+  outline: none;
+  text-decoration: none;
+}
+
+a:link {
+  color: var(--h2)
+}
+
+a:visited {
+  color: var(--h2)
+}
+
+h1 {
+  color: var(--h1);
+  align-self: center;
+  font-size: 3vw;
+  font-family:system-ui;
+}
+h2 {
+  color: var(--h2);
+  font-size: 2vw;
+  font-family: system-ui;
+}
+
+h3 {
+  color: var(--h3);
+  position: relative;
+  left: 0.5vw;
+  font-size: 1.5vw;
+}
+
+
+
+/* CLASSE */
+
+/* textes */
+.h1 {
+  color: var(--h1);
+  align-self: center;
+  font-size: 3vw;
+  font-family:system-ui;
+}
+.h2 {
+  color: var(--h2);
+  font-size: 2vw;
+  font-family: system-ui;
+}
+
+.h3 {
+  color: var(--h3);
+  position: relative;
+  left: 0.5vw;
+  font-size: 1.5vw;
+}
+.texte_onglet {
+  z-index: 110;
+  display: flex;
+  position:relative;
+  left: 15vw;
+  gap: 2vw;
+  font-family:system-ui;
+  font-size: 2vw;
+  font-weight:500;
+}
+
+/* formes */
+.carre{
+  background-color:var(--bg);
+  border: var(--border_bank);
+  box-shadow: var(--box_shadow_bank); 
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.carre:hover{
+  background-color: var(--bg_hover);
+}
+
+.carre_light {
+  background-color:var(--bg_light);
+  border: var(--border_bank);
+  box-shadow: var(--box_shadow_bank); 
+  border-radius: 5px;
+}
+
+.carre_light:hover{
+  background-color: var(--bg_light_hover);
+  transform: scale(1.03);
+}
+
+.entete {
+  background-color:var(--bg);
+  border: var(--border_bank);
+  box-shadow: var(--box_shadow_bank); 
+  z-index: 100;
+  display: flex;
+  align-items: center;
+}
+
+
+/* ID */
+
+/* id globale */
+#Page {
+    height: 1100px;
+    display: grid;
+}
+
+/* navbar forme/texte */
+#logo{
+  background-image:url(images/logo.svg);
+  background-size: 100% 100%;
+  width: 9vw;
+  height: 9vw;
+  margin-left: 1vw;
+  position: absolute;
+}
+
+#navbar {
+  height: 8vw;
+  top: 0px;
+  position:fixed;
+  width: 101vw;
+}
+
+
+/* footer formes/textes */
+#footer {
+  height: 20vw;
+  width: 100%;
+  display: flex;
+  align-self:flex-end;
+  position: relative;
+}
+/* droite */
+#carre_dans_footer {
+  width: 28vw;
+  height: 14vw;
+  position: relative;
+  left: 65vw;
+  background-color: var(--bg_light);
+  border-radius:3vw;
+  padding: 2vw;
+  z-index: 3;
+  transform: scale(1);
+}
+
+.texte_credits {
+  color: var(--h3);
+  font-size: 2vw;
+}
+.sous_texte_credits {
+  color: var(--h3);
+  font-size: 1vw;
+  position: relative;
+  top: -2vw;
+  left: 0.6vw;
+  font-style: italic;
+  padding-bottom:0;
+}
+
+/* milieu */
+#titre_footer_realisateur {
+  position: relative;
+  right:-9vw ;
+  top: -8vw;
+  font-size: 2vw;
+}
+.texte_realisateur {
+  position: relative;
+  right:2.5vw ;
+  font-family:'Lucida Sans';
+  line-height: 2vw ;
+  color: var(--h3);
+  top: 1vw;
+}
+/* gauche */
+#titre_footer_source {
+  position: relative;
+  right:45vw ;
+  top: -8vw;
+}
+#texte_source {
+  position: relative;
+  left: -60vw ;
+  top: 1vw;
+  font-family: 'Lucida Sans';
+  line-height: 2vw ;
+}
+
+/* ligne */
+.ligne {
+  background-color:var(--ligne);
+  border: solid 1px var(--ligne);
+  width: 0.2vw;
+  height: 17vw;
+  position: relative;
+  z-index: 2;
+}
+#ligne_droite {
+  left: -13vw;
+}
+#ligne_gauche {
+  left: -40vw;
+}
+
+
+/*CLASS site guitare*/
+.input{
+  width: 10vw;
+  height: 2vw;
+  background-color: var(--bg_light);
+  font-size: 2vw;
+  color: rgb(186, 232, 232);
+}
+
+
+/*ID site guitare*/
+#accord_generateur {
+  position: relative;
+  top: 10vw;
+  left: 20vw;
+  width: 50vw;
+  height: 35vw;
+}
+#titre_generateur{
+  padding: 1vw;
+  justify-self: center;
+}
+
+#text_accord {
+  position: relative;
+  left: 15vw;
+  font-size: 10vw;
+  color: aqua;
+}
+
+#form {
+  position: relative;
+  left: 2vw;
+}
+
+#carre_button_apply {
+  width: 10vw;
+  display: flex;
+  justify-content: center;
+  align-items:center ;
+  height: 4vw;
+  position: relative;
+  left: 25vw;
+  bottom: 6.5vw;
+}
+#carre_button_start {
+  width: 10vw;
+  display: flex;
+  justify-content: center;
+  align-items:center ;
+  height: 4vw;
+  position: relative;
+  left: 25vw;
+  bottom: 5.5vw;
+}

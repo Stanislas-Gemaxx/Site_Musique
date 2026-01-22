@@ -1,0 +1,45 @@
+PLAN/IDEES :
+
+    Accueille
+        credits plus detailler explique le but du site et le proger en cours et ceux que l'on peut retrouver sur se site
+        plus les dedicasse spétiale du style mama qui m'a mis a la guitare avec samir    
+           
+    Theorie musical
+        accord m/M/6/7/9... +photo et tabs et triade  (en generale les shema)
+        module en fonction de la tonalité te donne accord/note
+        shema de la game M/m avec toute les fondamentale/tierce... +blues notes
+        
+    Exercices
+        accord aleatoire dans une game/bpm/nb mesur/6,7,9...
+        (donner un position imposé d'accord ?)
+        exo de precision rythmique avec un clicker et l'accuracy
+            (ca pourrai te donner aleatoir a faire des croche/blanche/que 2 et 3/...)
+        Des backing track facile pour impro et rythme compliqué a faire par dessus
+        
+    Stanislas et la musique
+        doc exel avec papa modifiable
+        souvenir mur de photo(en fond ?)
+        lien vers tout se que j'ai ecrit a la main qui peut interresser
+        mettre histoire de mon materielle, mes concert et mes progrés
+
+CREDITS :
+        https://developer.mozilla.org/fr/docs/Web/CSS/Reference/Properties/scroll-behavior
+
+        https://duckduckgo.com/?t=ffab&q=r%C3%A9cup%C3%A9rer+variables+css+en+javascript&ia=web
+
+        https://openclassrooms.com/forum/sujet/recuperation-de-variable-css-en-javascript
+
+
+UTILE :
+    accord_game_mineur=["m","m","M","m","m","M","M"]
+    accord_game_majeur=["M","m","m","M","M","m","m",]
+
+    pour mettre ajour le site faire dans le terminal 
+    
+        -git add .
+
+        -git commit -m "derneire mise a jour"
+        
+        -git push -u origin main
+        
+

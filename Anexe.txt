@@ -1,0 +1,153 @@
+RACOURCI :
+        ctrl+: pour transformé une zone en commentaire
+        tab pour finir ces mots
+        ! puis tab pour generé un debut de fichier html qui fonctionne
+        sur vs code comment remplacer tout les mot "..." par autre chose "...2" ? tu fait ctr+h 
+
+HTML :
+
+        une balise est entre <> pour l'ouvrire est entre </> pour la fermer
+
+        les attribut d'une balise se mette au ..., <balise ...>  </balise> dans par exemple la balise h1 : <h1 align="center">  </h1>
+        pareil pour crée une class.
+
+        doctype : definie le type de file et de langage utilisé (pas sur que se soit utile si le file est deja en .html)
+
+        head : information invisible sur la page mais visible par le moteur de recherche et aussi des info pour assuré le fonctionement de la page
+                par exemple le titre de la page qui apparait dans le nom de l'onglet
+
+        body : information visible par l'utilisateur
+
+        meta : Encodage des caractères
+
+        link : crée un lien etre le file page.html et le style.css pour pouvoir ajouté des effet de style a se que l'on fait dans le file page.html
+
+        h1 : ecrire quelque chose au niveua d'arborescence 1 (align="")
+
+        p: crée un paragraphe et saute 2 ligne
+
+        form : permet de faciliter le recuperage de donner plus tard dans le script.js en Java
+
+        label : permet d'associer un nom que l'on peut reutiliser a une information
+
+        input : crée un champs ou l'utilisateur peut ecrire
+
+        div : structuré le code et permet d'appliquer du css plus facilement a une partie du contenue
+
+        script : relie le html avec les scripts java du file script
+
+        a : sert a crée un lien <a (href="lien")>texte qui sert de lien</a>
+
+        img :mettre une image (<img border="100" src="image_choisi.jpg" width="500" height="500">)
+
+
+        effet de police et organisation :
+
+                strong/b: met le texte en gras
+
+                em :italique
+
+                blockquote : marge a gauche
+
+                br : saut de ligne (pas besoin de la fermer)
+
+                ul :liste non ordonnée (avec des points)
+
+                ol : liste ordonnée (avec des numéros)
+
+                li : est nessessaire a chaque point de la liste ul ou ol
+
+                nav : sert à regrouper les liens de navigation d’un site web.
+
+                h1 : ecrire quelque chose au niveua d'arborescence 1 (align="")
+
+                p: crée un paragraphe et saute 2 ligne
+
+                pre :garde exatement comment s'est ecrit(espace et saut de ligne)
+
+JAVA :  
+        attention on essaye dans chaque fonction de convertir le bin par exemple dans les 2 autre base dans conv_binaire
+
+        document.getElementById("Id_de_lobjet_HTML_a_recuperer") ;
+        #on le stocke classiquement dans une variable
+
+        parseInt(chaine_de_caractere_a_traduire_en_nombre, base numérique de conversion)
+
+        nombre_a_convertir.toString(base_du_nombre_dorigine) ;
+
+        faire un delai ex :
+                    setTimeout(() => {alert("ca va s'affiché en delai") },300)
+
+        créé une var avec" let variable_nom=valeur_variable "
+        sinon ca crée une variable globale et juste let ca crée une var uniquement ou tu es
+        donc ca peux juste etre un if par ex
+        const cré une variable pas modifiable
+
+        
+        pour simplifié le changement de var css en java on peux juste simplement passé par une constante
+         pour remplacer tout les no.nom.nom...()
+        parceque setproperty pose probleme donc on utilise une fonction wraper 
+        qui en gros associe un texte a un autre avec ses proprieté tout en laissant la possibilité 
+        de mettre des var pour pouvoir utilisé setproperty :
+
+                const setCSSvar = (name, value) => {
+                document.documentElement.style.setProperty(name, value);
+                };
+
+        pour mettre une var dans un nom, on met le nom entre accent grave et la variable entre acolade 
+        et introduite par $ ex:
+                nom="var_ajouté"
+                var2=`nom_de_base_${nom}`
+
+                var2="nom_de_base_var-ajouté"
+
+CSS :
+
+        hsl est un codage de couleure comme rgb juste
+        qu'aulieu que se soit red green et blue comme parametre
+        c'est hue saturation et lightness
+
+        on peut appelé une class avec .class et une id avec #id puis entre acolade mettre toutes ses carracteristiques par exemple :
+                position: relative;(les top et bottom sont par rapport a la pos de base de l'image)
+                bottom: 100px;
+                left: 0px;
+                (attention c'est en mirroir)
+                z-index: -99;(c'est la profondeur donc la superposition des element l'un par rapport a l'autre)
+
+        Par défaut,     flex-direction: row;            → axe principal horizontal
+        Si              flex-direction: column;         → axe principal vertical
+                        justify-content:  ;             agit toujours dans le sens de l’axe principal.
+        pour que un objet devienne flexible il faut mettre display:flex;
+
+        exemple avec une image pour la mettre ou tu veux (pas en rapport avec le dessus):
+        /* .carre {
+        position: relative;
+        bottom: 100px;
+        left: 0px;
+        z-index: -99;
+        } */
+
+        pour definir des chose qui sont valable de partout on met: ":root{}"
+
+        pour crée des variable on met --nom_variable: se_qui_a_dedans ;
+        et pour l'appeller on met var(nom_variable)
+
+        pour la bordure d'une forme le critaire:  border: style with color
+
+        link (non visité) : l'état par défaut dans lequel se trouve un lien,
+        lorsqu'il n'est dans aucun autre état ;
+        cela peut être spécifiquement mis en forme en utilisant la pseudo classe :link ;
+
+        visited : un lien qui a déjà été visité (qui existe dans l'historique du navigateur),
+        mis en forme en utilisant la pseudo-classe :visited ;
+
+        pour la box shadow bank :  box-shadow: offset-x offset-y blur-radius spread-radius color;
+
+        pour padding :/*Quatre valeurs appliquent le premier écart en haut, le deuxième à droite, le troisième en bas et le quatrième à gauche.*/
+
+        recup var css en java :
+                getComputedStyle(Ton_HTMLElement).getPropertyValue(--ta-variable');
+
+
+
+pour mettre ajour le site faire dans le terminal "git add ." puis "git commit -m "derneire mise a jour"" puis "git push -u origin main"
