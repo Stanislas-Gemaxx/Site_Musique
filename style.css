@@ -18,7 +18,7 @@
 }
 /* classe par défaut */
 body {
-  background-image:url(images/bg.avif);
+  background-image:url(images/bg.jpg);
   background-size:100% 100%;
   margin: 0;
   padding: 0;
@@ -48,6 +48,8 @@ h2 {
   font-size: 2vw;
   font-family: system-ui;
   margin-left: 1vw;
+  position: relative;
+  top: -20vw;
 }
 
 h3 {
