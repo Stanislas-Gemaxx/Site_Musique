@@ -49,7 +49,6 @@ h2 {
   font-family: system-ui;
   margin-left: 1vw;
   position: relative;
-  top: -20vw;
 }
 
 h3 {
@@ -299,7 +298,11 @@ h3 {
 
 
 #exel_musique {
-  width:70vw; 
-  height:60vw; 
+  position: relative;
+  left: 2vw;
 }
-
+#chargement_exel {
+  position: relative;
+  top:-30vw;
+  z-index: -1;
+}
