@@ -21,6 +21,7 @@ PLAN/IDEES :
         souvenir mur de photo(en fond ?)
         lien vers tout se que j'ai ecrit a la main qui peut interresser
         mettre histoire de mon materielle, mes concert et mes progrés
+        mettre mes configs de son pour chaque morceau et les theme generaux (clair,disto...)
 
 CREDITS :
         https://developer.mozilla.org/fr/docs/Web/CSS/Reference/Properties/scroll-behavior

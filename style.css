@@ -39,7 +39,7 @@ a:visited {
 
 h1 {
   color: var(--h1);
-  align-self: center;
+  justify-self: center;
   font-size: 3vw;
   font-family:system-ui;
 }
@@ -47,6 +47,7 @@ h2 {
   color: var(--h2);
   font-size: 2vw;
   font-family: system-ui;
+  margin-left: 1vw;
 }
 
 h3 {
@@ -63,7 +64,7 @@ h3 {
 /* textes */
 .h1 {
   color: var(--h1);
-  align-self: center;
+  justify-self: center;
   font-size: 3vw;
   font-family:system-ui;
 }
@@ -79,6 +80,11 @@ h3 {
   left: 0.5vw;
   font-size: 1.5vw;
 }
+.titre_page {
+  position: relative;
+  top: 10vw;
+}
+
 .texte_onglet {
   z-index: 110;
   display: flex;
@@ -130,7 +136,7 @@ h3 {
 
 /* id globale */
 #Page {
-    height: 1100px;
+    height: 2000px;
     display: grid;
 }
 
@@ -246,7 +252,7 @@ h3 {
 /*ID site guitare*/
 #accord_generateur {
   position: relative;
-  top: 10vw;
+  top: 5vw;
   left: 20vw;
   width: 50vw;
   height: 35vw;
