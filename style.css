@@ -145,14 +145,14 @@ h3 {
 #logo{
   background-image:url(images/logo.svg);
   background-size: 100% 100%;
-  width: 7.5vw;
-  height: 7.5vw;
+  width: 4vw;
+  height: 4vw;
   margin-left: 1vw;
   position: absolute;
 }
 
 #navbar {
-  height: 8vw;
+  height: 5.5vw;
   top: 0px;
   position:fixed;
   width: 101vw;
@@ -298,8 +298,7 @@ h3 {
 
 
 #exel_musique {
-  position: relative;
-  left: 2vw;
+  justify-self: center;
 }
 #chargement_exel {
   position: relative;
