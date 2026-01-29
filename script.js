@@ -16,7 +16,7 @@ function bpm() {
 
     if (running) {
     interval_accord =setInterval(() => {
-                document.getElementById("text_accord").textContent = game_mineur[getRandomInt(6)]
+                document.getElementById("text_accord").textContent = gamme_mineur[getRandomInt(6)]
             },60/bpm_nb*1000*8)
     }
     else {clearInterval(interval_accord)}
@@ -24,33 +24,33 @@ function bpm() {
     
 }
 
-function game() {
+function gamme() {
     if (running) {
         note_bank = ['A','A#','B','C','C#','D','D#','E','F','F#','G','G#','A','A#','B','C','C#','D','D#','E','F','F#','G','G#']
 
-        interval_accord_mineur_gamemineur=[0,1,3,4]
-        interval_accord_majeur_gamemajeur=[1,2,5,6]
+        interval_accord_mineur_gammemineur=[0,1,3,4]
+        interval_accord_majeur_gammemajeur=[1,2,5,6]
 
         fondamentale=index_note()
 
         
         mineur=[0,2,3,5,7,8,10]
-        game_mineur = mineur.map(i => note_bank[i + fondamentale])
-        console.log("note mineur : ",game_mineur)
-        for (interval of interval_accord_mineur_gamemineur) {
-            game_mineur[interval] = game_mineur[interval]+"m"
+        gamme_mineur = mineur.map(i => note_bank[i + fondamentale])
+        console.log("note mineur : ",gamme_mineur)
+        for (interval of interval_accord_mineur_gammemineur) {
+            gamme_mineur[interval] = gamme_mineur[interval]+"m"
         }
         
 
         majeur=[0,2,4,5,7,9,10]
-        game_majeur = majeur.map(j => note_bank[j + fondamentale])
-        console.log("note majeur : ",game_majeur)
-        for (interval of interval_accord_majeur_gamemajeur) {
-            game_majeur[interval] = game_majeur[interval]+"m"
+        gamme_majeur = majeur.map(j => note_bank[j + fondamentale])
+        console.log("note majeur : ",gamme_majeur)
+        for (interval of interval_accord_majeur_gammemajeur) {
+            gamme_majeur[interval] = gamme_majeur[interval]+"m"
         }
             
-        console.log("accord mineur : ",game_mineur)
-        console.log("accord majeur : ",game_majeur)
+        console.log("accord mineur : ",gamme_mineur)
+        console.log("accord majeur : ",gamme_majeur)
     }
 
 }
@@ -58,7 +58,7 @@ function index_note() {
     index=0
 
     for (note of note_bank) {
-        if (note==game_input) {
+        if (note==gamme_input) {
             return index
         }
         else {
@@ -70,7 +70,7 @@ function index_note() {
 function start(){
     if ((document.getElementById("start_button").textContent)=="Start") {
         running = true
-        game_input = document.getElementById("game").value
+        gamme_input = document.getElementById("gamme").value
         bpm_nb = document.getElementById("bpm").value
 
         document.getElementById("start_button").textContent = "Stop"
@@ -79,7 +79,7 @@ function start(){
         running = false
         document.getElementById("start_button").textContent = "Start"
     }
-    game()
+    gamme()
     bpm()
 }
 

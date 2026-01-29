@@ -11,6 +11,7 @@
   --h1:hsl(0, 0%, 100%);
   --h2: hsl(0,0%,95%);
   --h3:hsl(0,0%,70%);
+  --h4:hsl(0,0%,60%);
 
   /* attributs des formes */
   --border_bank: solid 1px hsl(0,0%,30%);
@@ -47,15 +48,17 @@ h2 {
   color: var(--h2);
   font-size: 2vw;
   font-family: system-ui;
-  margin-left: 1vw;
-  position: relative;
 }
 
 h3 {
   color: var(--h3);
-  position: relative;
-  left: 0.5vw;
   font-size: 1.5vw;
+  line-height:2.5vw;
+}
+h4 {
+  color: var(--h4);
+  font-size: 1vw;
+  font-style:italic ;
 }
 
 
@@ -81,9 +84,12 @@ h3 {
   left: 0.5vw;
   font-size: 1.5vw;
 }
+.centre {
+  justify-items: center;
+}
+
 .titre_page {
-  position: relative;
-  top: 10vw;
+  margin-top: 10vw;
 }
 
 .texte_onglet {
@@ -296,7 +302,7 @@ h3 {
   bottom: 5.5vw;
 }
 
-
+/* doc EXEL */
 #exel_musique {
   justify-self: center;
 }
@@ -304,4 +310,17 @@ h3 {
   position: relative;
   top:-30vw;
   z-index: -1;
+}
+
+
+#aide_tonalité{
+  width: 65vw;
+  height: 28vw;
+  justify-content: center;
+  display: grid;
+}
+#carre_button_tonalite {
+  width: 10vw;
+  display: grid;
+  justify-items: center;
 }

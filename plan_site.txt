@@ -7,10 +7,10 @@ PLAN/IDEES :
     Theorie musical
         accord m/M/6/7/9... +photo et tabs et triade  (en generale les shema)
         module en fonction de la tonalité te donne accord/note
-        shema de la game M/m avec toute les fondamentale/tierce... +blues notes
+        shema de la gamme M/m avec toute les fondamentale/tierce... +blues notes
         
     Exercices
-        accord aleatoire dans une game/bpm/nb mesur/6,7,9...
+        accord aleatoire dans une gamme/bpm/nb mesur/6,7,9...
         (donner un position imposé d'accord ?)
         exo de precision rythmique avec un clicker et l'accuracy
             (ca pourrai te donner aleatoir a faire des croche/blanche/que 2 et 3/...)
@@ -34,8 +34,8 @@ CREDITS :
 
 
 UTILE :
-    accord_game_mineur=["m","m","M","m","m","M","M"]
-    accord_game_majeur=["M","m","m","M","M","m","m",]
+    accord_gamme_mineur=["m","m","M","m","m","M","M"]
+    accord_gamme_majeur=["M","m","m","M","M","m","m",]
 
     pour mettre ajour le site faire dans le terminal 
     
